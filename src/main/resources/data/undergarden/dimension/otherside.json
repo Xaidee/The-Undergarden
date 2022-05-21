@@ -1,0 +1,12 @@
+{
+  "type": "undergarden:otherside",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": 0,
+    "settings": "undergarden:otherside",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "undergarden:otherside/otherside_a"
+    }
+  }
+}

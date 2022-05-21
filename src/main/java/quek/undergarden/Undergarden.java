@@ -327,7 +327,17 @@ public class Undergarden {
 				return false;
 			}
 		});
-		//TODO: OthersideDSE
+		DimensionSpecialEffects.EFFECTS.put(UGDimensions.OTHERSIDE_LEVEL.location(), new DimensionSpecialEffects(300, false, DimensionSpecialEffects.SkyType.NONE, true, true) {
+			@Override
+			public Vec3 getBrightnessDependentFogColor(Vec3 fogColor, float brightness) {
+				return fogColor;
+			}
+
+			@Override
+			public boolean isFoggyAt(int pX, int pY) {
+				return true;
+			}
+		});
 	}
 
 	public void gatherData(GatherDataEvent event) {
